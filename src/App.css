@@ -1,0 +1,167 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.quiz-container h1 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+}
+
+.quiz-container,
+.panel,
+.question,
+.summary-question,
+.summary-item,
+.summary-option,
+.option {
+  color: #111111;
+}
+
+.panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: #ffffff10;
+}
+
+.subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+  border-radius: 9999px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.question {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.option {
+  text-align: left;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #111827;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.option.selected {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px #c7d2fe inset;
+}
+
+.option.correct {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.option.wrong {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.primary {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.explanation {
+  margin-bottom: 0.75rem;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Summary styles with light colors */
+.summary-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.summary-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.summary-item.ok {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.summary-item.not-ok {
+  background: #fff1f2;
+  border-color: #fecdd3;
+}
+
+.summary-question {
+  margin-bottom: 0.5rem;
+}
+
+.summary-options {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.summary-option {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  background: #ffffff;
+}
+
+.summary-option.correct {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.summary-option.wrong {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.summary-actions {
+  display: flex;
+  gap: 0.5rem;
+}
